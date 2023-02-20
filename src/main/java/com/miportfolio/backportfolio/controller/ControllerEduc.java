@@ -29,6 +29,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/educacion")
+//@CrossOrigin(origins = "http://localhost:4200")
 @CrossOrigin(origins = "https://frontnoe-a9212.web.app")
 public class ControllerEduc {
     @Autowired 
@@ -59,7 +60,6 @@ public class ControllerEduc {
         interfEdu.saveEducacion(edu);
         return edu1;
 }
-
 
     
      @GetMapping("/traer/{id}")
